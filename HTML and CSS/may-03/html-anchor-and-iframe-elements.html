@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>May 03 | HTML Anchor and iframe elements</title>
+</head>
+
+<body>
+  <header>
+    <h1>HTML Anchor and iframe elements</h1>
+  </header>
+  <main>
+    <h2>HTML Links</h2>
+    <a href="https://www.example.com">Simple Link</a>
+    <br />
+    <p><b>Note:</b> We can also control the behaviour of link such as where it should open using <code>type=""</code> attribute with anchor element.</p>
+    <h3>Type attribute</h3>
+    <a href="https://www.example.com" target="_self">A Link with target="_self"</a>
+    <br />
+    <a href="https://www.example.com" target="_blank">A Link with target="_blank"</a>
+    <br />
+    <a href="https://www.example.com" target="_parent">A Link with target="_parent"</a>
+    <br />
+    <a href="https://www.example.com" target="_top">A Link with target="_top"</a>
+    <br />
+    <p><b>Note:</b>We can also specify a custom target to open it in a frame by using <code>name</code> attribute with <code>iframe</code> element and using the value of <code>name</code> attribute with <code>target</code> attribute.</p>
+    <a href="https://www.example.com" target="my-my">A Link with target="my-my"</a>
+    <hr />
+    <h3>Iframe element</h3>
+    <iframe name="my-my" src="html-tables.html" width="100%" height="400"></iframe>
+  </main>
+  <footer>
+    <hr />
+    <p>Coprights All rights reserved!</p>
+  </footer>
+</body>
+</html>

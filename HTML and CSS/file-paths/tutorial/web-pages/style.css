@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: blue;
+}
+
+.highlight {
+  background-color: yellow;
+  font-style: italic;
+}
