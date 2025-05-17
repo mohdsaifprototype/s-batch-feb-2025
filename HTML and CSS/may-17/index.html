@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>May 17 | HTML Form pt-1</title>
+    <style>
+      /* Element selector */
+      body {
+        background-color: salmon;
+      }
+
+      /* Class selector */
+      .text-center {
+        text-align: center;
+      }
+
+      /* Id selector */
+      #form-container {
+        background-color: hsl(5, 90%, 75%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Getting started with HTML Form</h1>
+    </header>
+    <main>
+      <div id="form-container">
+        <!-- Working with form -->
+        <form action="received.html">
+          <label>
+            Full name
+            <input
+              type="text"
+              placeholder="John Doe"
+              name="Full Name"
+              required
+            />
+          </label>
+
+          <label for="user-email"> Email </label>
+          <input
+            id="user-email"
+            type="email"
+            value="johndoe@example.com"
+            name="Email"
+            readonly
+            required
+          />
+
+          <label>
+            Password
+            <input 
+              type="password" 
+              name="password" 
+              required
+              disabled
+            />
+          </label>
+
+          <button>Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="text-center">&copy;All rights reserved!</p>
+    </footer>
+  </body>
+</html>
