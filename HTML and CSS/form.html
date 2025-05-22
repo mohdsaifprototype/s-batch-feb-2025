@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <style>
+      body {
+        background-color: powderblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Forms</h1>
+    <div>
+      <form>
+        <fieldset>
+          <legend>Personal Details: </legend>
+          <label>
+            First Name: <input type="text" placeholder="First Name" />
+          </label>
+          <br /><br />
+          <label
+            >Last Name: <input type="text" placeholder="Last Name"
+          /></label>
+          <br /><br />
+          <label>Email: <input type="email" value="@gmail.com" /> </label>
+          <br /><br />
+          <label
+            >Birth Date: <input type="date" placeholder="dd-mm-yyyy"
+          /></label>
+          <br /><br />
+          Gender: <br />
+          <label
+            ><input type="radio" name="gender" id="male" value="Male" />
+            Male</label
+          >
+          <label
+            ><input type="radio" name="gender" id="female" value="Female" />
+            Female</label
+          >
+          <br /><br />
+          <label
+            >Phone Number:
+            <input
+              type="tel"
+              placeholder="123-456-7890"
+              pattern="(0-9){3}(0-9){3}(0-9){4}"
+            />
+          </label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Professional Details: </legend>
+        <p>Choose your favourite Language</p>
+        <label><input type="radio" name="fav-language" /> HTML</label>
+        <label><input type="radio" name="fav-language" />CSS</label>
+        <label><input type="radio" name="fav-language" /> JavaScript</label>
+        <br /><br />
+        Technical Skills:<br />
+        <label
+          ><input type="checkbox" name="html/css" value="HTML/CSS" />
+          HTML/CSS</label
+        ><br />
+        <label
+          ><input type="checkbox" name="java" value="JavaScript" />
+          JavaScript</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="React/Vue/Angular"
+            value="React/Vue/Angular"
+          />
+          React/Vue/Angula</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="PHP/Python/Node.js"
+            value="PHP/Python/Node.js"
+          />
+          PHP/Python/Node.js</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="SQL/NoSQL Databases"
+            value="SQL/NoSQL Databases"
+          />
+          SQL/NoSQL Databases</label
+        ><br />
+        <label
+          ><input type="checkbox" name="Git/GitHub" value="Git/GitHub" />
+          Git/GitHub</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="APIs&NoSQL Databases"
+            value="APIs&NoSQL Databases"
+          />
+          APIs&NoSQL Databases</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="Responsive Design"
+            value="Responsive Design"
+          />
+          Responsive Design</label
+        ><br /><br />
+        <label>
+          <input
+            type="button"
+            onclick="alert('Hello World!')"
+            value="Click Me!"
+          />
+        </label>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

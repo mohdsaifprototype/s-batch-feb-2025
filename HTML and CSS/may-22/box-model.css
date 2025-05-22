@@ -1,0 +1,42 @@
+body {
+  background-color: cornflowerblue;
+}
+
+.box {
+  background-color: white;
+  width: fit-content;
+  border: 1px solid;
+  /* padding-top: 12px; */
+  /* padding-right: 12px; */
+  /* padding-bottom: 12px; */
+  /* padding-left: 12px; */
+
+  /* padding: 12px; */
+  /* padding: all */
+  /* padding: 12px 40px; */
+  /* padding: vertical horizontal 
+              OR
+     padding: <top & bottome> <left & right> 
+  */
+  /* padding: 12px 40px 60px; */
+  /* padding: top <right & left> bottom */
+
+  /* padding: 12px 40px 60px 80px; */
+  /* padding: top right bottom left */
+
+  /* There is another way to apply padding using some logical sense */
+  /* padding-inline-start: 40px; */
+  /* padding-inline-end: 60px; */
+  /* padding-inline: 40px 60px; */
+  /* padding-inline: 40px; */
+
+  /* padding-block-start: 40px; */
+  /* padding-block-end: 60px; */
+  /* padding-block: 40px 60px; */
+  /* padding-block: 40px; */
+}
+
+.msg-box{
+  background-color: aqua;
+  padding-left: 40px;
+}
