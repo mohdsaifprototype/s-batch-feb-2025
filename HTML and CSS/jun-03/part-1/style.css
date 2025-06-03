@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+p::selection {
+  color: red;
+  background-color: yellow;
+}
+
+.story-begin {
+  font-size: 20px;
+}
+
+.story-begin::first-letter {
+  font-size: 28px;
+  color: blue;
+}
+
+.story-begin::first-line {
+  font-style: italic;
+}
+
+.container {
+  border-width: 2px;
+  border-style: dashed;
+  border-color: royalblue;
+  padding: 8px;
+}
+
+.magical-heading {
+  color: gold;
+}
+
+.my-div {
+  background-color: #fff000;
+  padding: 8px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+/* .my-div > .before {
+  color: #ff00ff;
+}
+.my-div > .after {
+  color: #000fff;
+} */
+
+.my-div::before {
+  content: "👉 ";
+  color: #ff00ff;
+}
+.my-div::after {
+  content: " 👈";
+  color: #000fff;
+}

@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+}
+
+.container {
+  border-width: 2px;
+  border-style: dashed;
+  border-color: royalblue;
+  padding: 8px;
+  max-width: 1440px;
+  margin-inline: auto;
+  height: 600px;
+
+  /* background properties */
+  /* background-color: #ffff11; */
+  /* background-image: url(spider-web.png), linear-gradient(530deg, violet, blue); */
+  /* background-image: linear-gradient(530deg, violet, blue); */
+  /* background-repeat: [repeat] | repeat-x | repeat-y | no-repeat; */
+  /* background-repeat: no-repeat; */
+  /* background-position: <offset-x> <offset-y>; */
+  /* background-position: top | right| bottom | left | center; */
+  /* background-position: 100px 150px; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+  /* background-size: contain; */
+
+  background: url(spider-web.png) no-repeat center center/contain fixed, linear-gradient(530deg, violet, blue);
+}
+
+.box {
+  margin: 20px;
+  background-color: #1166;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  align-content: center;
+
+  border-width: 20px;
+  border-style: solid;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 4;
+}
