@@ -1,0 +1,22 @@
+/* body{
+  background-color: #fffbbb;
+} */
+
+/* 
+We use pseudo class most of the time specially to apply css for anchor element
+*/
+a:link {
+  color: blueviolet;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
+a:active {
+  color: chartreuse;
+}

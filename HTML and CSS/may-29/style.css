@@ -1,0 +1,64 @@
+/* 
+CSS Selector are part of css syntax it basically tell the browser to apply css styling to which selection of element
+*/
+
+/* 
+  Universal selector
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* element selector */
+html {
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding-block: 2px;
+}
+
+footer{
+  padding-block: 2px;
+}
+/* 
+  class selector
+  we can use a class multiple times as well as we can use multiple classes in the same element.
+*/
+.container {
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: #fff000; */
+  border: 2px solid #fff000;
+  padding-inline: 20px;
+  margin-bottom: 16px;
+  max-width: 1440px;
+  margin-inline: auto;
+  /* min-width: 1080px; */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: #00fff0;
+}
+
+/* 
+id selector
+*/
+
+#section-1 {
+  background-color: #f0f0f0;
+  margin-block-start: 16px;
+}
+
+#section-2 {
+  background-color: #fff000;
+}

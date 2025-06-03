@@ -16,7 +16,7 @@ body {
   /* padding: 12px 40px; */
   /* padding: vertical horizontal 
               OR
-     padding: <top & bottome> <left & right> 
+     padding: <top & bottom> <left & right> 
   */
   /* padding: 12px 40px 60px; */
   /* padding: top <right & left> bottom */
@@ -38,5 +38,9 @@ body {
 
 .msg-box{
   background-color: aqua;
-  padding-left: 40px;
+  /* padding-left: 40px; */
+  padding-inline-start: 40px;
+  text-align: end;
+
+  border: 2px solid salmon;
 }
