@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #00ffff;
+  padding: 20px;
+  margin-block: 12px;
+}
+
+.box {
+  border: 2px solid red;
+  /* display: block; */
+  width: 200px;
+  /* margin: 20px; */
+}
+
+div.box {
+  /* display: inline; */
+}
+
+span.box {
+  display: inline-block;
+  width: 50%;
+}
+
+.floating-container * {
+  border: 2px solid blue;
+  padding: 12px;
+}
+
+.left {
+  float: left;
+  height: 200px;
+}
+
+.right {
+  float: right;
+  height: 150px;
+  clear: left;
+}
+
+.floating-container>p {
+  clear: both;
+  margin-block: 0;
+}
+
+.floating-container>p.c-right {
+  clear: right;
+}
+
+.floating-container>p.c-left {
+  clear: left;
+}

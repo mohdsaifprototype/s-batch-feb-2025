@@ -1,0 +1,1 @@
+Create a navbar either using display property of inline, inline-block or using float.
