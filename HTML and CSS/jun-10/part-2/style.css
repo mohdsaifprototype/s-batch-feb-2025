@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: brown;
+  color: whitesmoke;
+  padding: 4px;
+  text-align: center;
+  height: 96px;
+}
+
+main {
+  background-color: #FFFF33;
+  padding: 8px;
+/*   height: calc(100vh - 96px); */
+  height: 200vh;
+}
+
+.container {
+  background-color: #00FFFF;
+  padding: 12px;
+  margin-block: 12px;
+  position: relative;
+  z-index: 0;
+}
+
+.box {
+  border: 2px solid blue;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  align-content: center;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.5;
+}
+
+/* 
+  position: [static] | relative | absolute | fixed | sticky;
+
+  try setting the position property other than static to use the following css properties:
+  top, bottom, left, right z-index
+*/
+.p-relative {
+  background-color: crimson;
+  position: relative;
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+}
+.p-absolute {
+  background-color: darkblue;
+  position: absolute;
+  z-index: 2;
+  right: 40px;
+  bottom: 40px;
+}
+.p-fixed {
+  background-color: darkgreen;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 3;
+}
+.p-sticky {
+  background-color: darkorchid;
+  position: sticky;
+  top: 10px;
+  z-index: 4;
+}
