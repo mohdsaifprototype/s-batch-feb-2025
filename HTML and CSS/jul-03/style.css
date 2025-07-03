@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body > header {
+  padding: 0.5vw;
+  background-color: #777;
+  color: #f9f9f9;
+  margin-block-end: 0.5vw;
+  text-shadow: 0 0 4px black;
+}
+
+.flex-container {
+  border: 4px solid salmon;
+  max-width: 720px;
+  margin-inline: auto;
+  height: 20rem;
+}
+
+.flex-item {
+  border: 2px solid blue;
+  padding: 40px;
+}
+
+/* Flexbox */
+
+.flex-container {
+  display: flex;
+  /* Flex-direction: [row] | row-reverse | column | column-reverse; */
+  /* flex-direction: row-reverse; */
+
+  /* flex-wrap: [nowrap] | wrap | wrap-reverse; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* We have a shorthand flex-flow: <flex-direction> <flex-wrap>; */
+  flex-flow: row wrap;
+
+  /* We can also control the alignments of flex-item by applying properties on flex-container */
+  /* justify-content: [flex-start] | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
+  justify-content: space-between;
+
+  /* align-items: [stretch] | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe; */
+  align-items: center;
+
+  align-content: start;
+
+  /* row-gap: 32px; */
+  /* column-gap: 40px; */
+
+  /* Shorthand gap: <row-gap> <column-gap> */
+  gap: 32px 40px;
+}
+
+#item-2 {
+  order: 4;
+}
+
+#item-4 {
+  order: 1;
+}
+
+#item-6 {
+  flex-grow: 2;
+}
+
+#item-1 {
+  flex-shrink: 2;
+  flex-basis: min-content;
+}
+
+#item-3 {
+  align-self: flex-start;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
