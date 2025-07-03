@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -19,14 +19,14 @@ header {
 }
 
 main {
-  background-color: #FFFF33;
+  background-color: #ffff33;
   padding: 8px;
-/*   height: calc(100vh - 96px); */
+  /*   height: calc(100vh - 96px); */
   height: 200vh;
 }
 
 .container {
-  background-color: #00FFFF;
+  background-color: #00ffff;
   padding: 12px;
   margin-block: 12px;
   position: relative;
