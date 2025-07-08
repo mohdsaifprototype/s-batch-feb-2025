@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: #121212;
+  background-color: #fff;
+}
+
+/* ---/ Navbar \--- */
+.navbar {
+  border: 2px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: .25rem 4rem;
+}
+
+.nav-logo {
+  clip-path: circle();
+}
+
+.navbar * {
+  border: 1px solid blue;
+}
+/* ---\ Navbar /--- */
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
