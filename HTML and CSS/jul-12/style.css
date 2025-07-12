@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: #fff;
+  background-color: #030303;
+}
+
+.container {
+  width: 100%;
+  max-width: 1444px;
+  margin-inline: auto;
+  padding: 4px 12px;
+  border: 4px solid skyblue;
+}
+
+.grid-container {
+  min-height: 40rem;
+  background-color: yellow;
+}
+
+.grid-item {
+  padding: 8px;
+  background-color: blue;
+}
+
+/* ---/ Grid \--- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* align-content: center; */
+  /* justify-content: center; */
+  gap: 8px;
+}
+
+.item-3 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 6;
+  grid-column-end: 6;
+  position: relative;
+  z-index: 0;
+}
+
+.item-2 {
+  /* grid-row-start: 3;
+  grid-column-start: 4;
+  grid-row-end: 8;
+  grid-column-end: 9; */
+  grid-area: 3 / 4 / 8 / 9;
+  background-color: magenta;
+  position: relative;;
+  z-index: 1;
+}
+/* ---\ Grid /--- */
+
+.text-center {
+  text-align: center;
+}
