@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fs-base: 16px;
+  --fs-1: calc(var(--fs-base) * 0.75);
+  --fs-2: calc(var(--fs-base) * 1);
+  --fs-3: calc(var(--fs-base) * 1.5);
+  --fs-4: calc(var(--fs-base) * 2);
+
+  --text: #050315;
+  --background: #fbfbfe;
+  --primary: #2f27ce;
+  --secondary: #dedcff;
+  --accent: #433bff;
+
+  /* Semantic colors */
+  --success: #198754;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #0dcaf0;
+  --light: #f8f9fa;
+  --dark: #212529;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Google Sans Code", monospace;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+body {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.fs-1 {
+  font-size: var(--fs-1);
+}
+
+.fs-2 {
+  font-size: var(--fs-2);
+}
+.fs-3 {
+  font-size: var(--fs-3);
+}
+.fs-4 {
+  font-size: var(--fs-4);
+}
+
+/* ---/ Navbar \--- */
+.navbar {
+  background-color: var(--accent);
+}
+
+.navbar .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ---\ Navbar /--- */
+
+/* ---/ Footer \--- */
+.footer{
+  background-color: var(--accent);
+}
+
+.footer p {
+  text-align: center;
+}
+/* ---\ Footer /--- */
+/* ---/ Utilities \--- */
+/* Define your custom styling for all the html elements */
+/* ---\ Utilities /--- */
+
+/* ---/ Utility classes \--- */
+.text-center {
+  text-align: center;
+}
+
+.container {
+  padding: 8px;
+  margin-inline: auto;
+}
+
+.btn {
+  all: unset;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 2px var(--light);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+/* ---\ Utility classes /--- */
+
+/* @media screen and (max-width: 376px) {
+} */

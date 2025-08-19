@@ -1,10 +1,24 @@
 body {
   background-color: black;
 }
+.message {
+  display: none;
+  text-align: center;
+  /* font-size: 4vw; */
+  font-size: 40px;
+  border: 8px solid transparent;
+  padding: 8px;
+  border-image: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+  border-image-slice: 1;
+}
 /* For mobile S */
 @media only screen and (max-width: 320px) {
   body {
     background: #000;
+  }
+  .ms{
+    display: block;
+    color: white;
   }
 }
 
@@ -13,12 +27,18 @@ body {
   body {
     background: white;
   }
+  .mm {
+    display: block;
+  }
 }
 
 /* for mobile */
 @media only screen and (min-width: 376px) and (max-width: 426px) {
   body{
     background: green;
+  }
+  .ml {
+    display: block;
   }
 }
 
@@ -27,12 +47,19 @@ body {
   body{
     background: orange;
   }
+  .mt {
+    display: block;
+  }
 }
 
 /* For laptop */
 @media only screen and (min-width: 769px) and (max-width: 1025px) {
   body{
     background: orangered;
+  }
+  .ls {
+    display: block;
+    color: white;
   }
 }
 
@@ -41,11 +68,18 @@ body {
   body{
     background: blue;
   }
+  .lm {
+    display: block;
+    color: white;
+  }
 }
 
 /* For 4k Screen */
 @media only screen and (min-width: 1441px) and (max-width: 2561px) {
   body{
     background: blueviolet;
+  }
+  .s4k{
+    display: block;
   }
 }
