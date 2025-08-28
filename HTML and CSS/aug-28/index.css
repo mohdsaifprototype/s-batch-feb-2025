@@ -1,0 +1,71 @@
+/* style.css */
+
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+.animated-gradient {
+  height: 240px;
+  width: 240px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 3em;
+
+  /* Animate the gradient background */
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.profile {
+  padding: 4px;
+  position: relative;
+  z-index: 0;
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+.profile::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* background-image: linear-gradient(#ff6ec4, #7873f5, #4ade80, #facc15); */
+  background-image: repeating-conic-gradient(#ff6ec4 0deg, #7873f5 45deg, #4ade80 90deg);
+  animation: r1 4s ease 0s infinite normal both;
+}
+
+@keyframes r1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile img {
+  clip-path: circle();
+}
