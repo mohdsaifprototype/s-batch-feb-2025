@@ -147,12 +147,15 @@ body {
     var(--accent)
   );
   border-radius: 50%;
-  /* animation-name: rotate;
-  animation-duration: 8s;
+  /* animation-name: r1;
+  animation-duration: 4s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite; */
-  /* background: linear-gradient(0deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1); */
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both; */
   animation: r1 4s linear 0s infinite normal both;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 @keyframes r1 {
