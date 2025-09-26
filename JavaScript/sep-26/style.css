@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: whitesmoke;
+  background-color: #262335;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+details {
+  margin-block: 1rem;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+code {
+  padding: .2rem;
+  background-color: #333;
+  border-radius: 0.2rem;
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+}
+
+pre {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+pre code {
+  display: block;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  margin-block: 1rem;
+  border: 2px solid;
+}
+
+td, th {
+  border: 2px solid;
+  padding: .5rem;
+}
